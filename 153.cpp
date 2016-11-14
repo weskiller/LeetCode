@@ -20,7 +20,7 @@ public:
                 return findMin(front);
     }
 };
-//Optimal solution
+//Optimal solution (default sort by Asc)
 int findMin(vector<int> &num) 
  {
         int start=0,end=num.size()-1;
