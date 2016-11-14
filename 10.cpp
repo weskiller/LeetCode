@@ -1,4 +1,5 @@
-#with recursive function 
+//Subject: https://leetcode.com/problems/regular-expression-matching/
+//with recursive function 
 class Solution {
 public:
     bool isMatch(string s, string p) 
@@ -12,7 +13,7 @@ public:
     }
 };
 
-#with dynamic planning solution
+//with dynamic planning solution
 class Solution {
 public:
     bool isMatch(string s, string p) 
