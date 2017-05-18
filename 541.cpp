@@ -16,8 +16,8 @@ public:
 					continue;
 				}
 				int left = MAX, up = MAX;
-				if (j>0) left = result[i][j - 1];
-				if (i>0) up = result[i - 1][j];
+				if (j > 0) left = result[i][j - 1];
+				if (i > 0) up = result[i - 1][j];
 				int min = left < up ? left + 1 : up + 1;
 				result[i][j] = matrix[i][j] ? min : 0;
 			}
@@ -31,8 +31,8 @@ public:
 				int right = MAX, down = MAX;
 				if (width - j > 1) right = result[i][j + 1];
 				if (height - i > 1) down = result[i + 1][j];
-				int min = right<down ? right + 1 : down + 1;
-				result[i][j] = result[i][j]<min ? result[i][j] : min;
+				int min = right < down ? right + 1 : down + 1;
+				result[i][j] = result[i][j] < min ? result[i][j] : min;
 				if (thelt0 > i + j && matrix[i][j] == 1 && result[i][j] < min)
 					result[i][j] = min;
 			}
