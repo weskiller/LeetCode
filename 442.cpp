@@ -6,10 +6,8 @@ public:
 		vector<int> v(nums.size(), 1);
 		for (auto x : nums) {
 			v[x - 1] -= 1;
-		}
-		for (int i = 0; i < v.size(); i++) {
-			if (v[i] == -1)
-				result.push_back(i + 1);
+			if (v[x - 1] == -1)
+				result.push_back(x);
 		}
 		return result;
 	}
